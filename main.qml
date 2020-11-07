@@ -6,8 +6,6 @@ Window {
     width: 640
     height: 480
     title: qsTr("Canvas-Nest in Qml")
-
-
     MouseArea{
         anchors.fill:parent
         onClicked: {
@@ -46,7 +44,7 @@ Window {
         Timer{
             id:request_timer
             repeat: true
-            interval: 1
+            interval: 10
             triggeredOnStart: false
             onTriggered: {
                 canvas.requestPaint();
